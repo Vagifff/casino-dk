@@ -61,7 +61,7 @@ export function getPartners(): Partner[] {
         { id: "fast-withdrawal", name: "Fast Withdrawals" },
         { id: "live-chat", name: "24/7 Live Chat" },
       ],
-      partnerUrl: "https://netbet.livepartners.com/view.php?z=178753&subid=NetBet&cid=",
+      partnerUrl: "https://netbet.livepartners.com/view.php?z=178753&subid=NetBet-DK02VG&cid=",
       isMobile: true,
       votes: 4500,
       votesCount: 700,
