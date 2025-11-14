@@ -46,7 +46,7 @@ export default function KeyTerms({ keyTerms, minDeposit, defaultText }: KeyTerms
   }
 
   return (
-    <div className="text-[8px] md:text-xs text-[#8B8E97] leading-relaxed space-y-0.5">
+    <div className="text-[9px] md:text-xs text-[#8B8E97] leading-relaxed space-y-0.5">
       <p>
         <strong className="text-[#F5F6F7]">Key terms{keyTerms ? "" : " (New Customers, 18+)"}</strong>
       </p>

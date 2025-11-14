@@ -1,21 +1,19 @@
+"use client"
+
 import type { Partner, Gametype } from '@/lib/mockDev';
 import BrandListClient from './BrandListClient';
+import { useIsMobile } from "@/hooks/use-mobile"
 
 interface BrandListProps {
   partners: Partner[];
-  isMobile: boolean;
   gametype: Gametype;
-  gclid: string;
-  enableExtendedView?: boolean;
 }
 
 export default function BrandList({
   partners,
-  isMobile,
   gametype,
-  gclid,
-  enableExtendedView = false,
 }: BrandListProps) {
+  const isMobile = useIsMobile()
   const sortedPartners = [...partners].sort((a, b) => a.order - b.order);
 
   return (
@@ -23,7 +21,6 @@ export default function BrandList({
       partners={sortedPartners}
       isMobile={isMobile}
       gametype={gametype}
-      gclid={gclid}
     />
   );
 }

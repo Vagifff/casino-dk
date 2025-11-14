@@ -75,11 +75,11 @@ export default function BrandCard({ partner, gclid, isMobile, showPopularBadge }
 
         <div className="p-2">
           <div className="flex items-center justify-center gap-6 mb-2">
-            <div className="flex-shrink-0">
-              <div className="relative w-44 h-28">
-                <Image src={partner.logo || "/placeholder.svg"} alt={partner.name} fill className="object-contain" />
-              </div>
-            </div>
+                <div className="flex-shrink-0">
+                  <div className="relative w-44 h-28">
+                    <Image src={partner.logo || "/placeholder.svg"} alt={partner.name} fill className="object-contain brightness-110 contrast-110" />
+                  </div>
+                </div>
 
             <div className="flex flex-col items-center justify-center flex-shrink-0">
               <div className="text-xl font-bold text-[#FFD93D] mb-0.5 leading-none">{rating}</div>
@@ -96,25 +96,25 @@ export default function BrandCard({ partner, gclid, isMobile, showPopularBadge }
             </div>
           </div>
         </div>
-        {partner.operatorName && (
-          <div className="px-2 pt-1 pb-1 border-t border-[#3B3E47]/50">
-            <div className="text-[7px] text-[#8B8E97] leading-relaxed">
-              <strong className="text-[#F5F6F7]">{partner.name}</strong> — Operated in Denmark by {partner.operatorName}. Licensed by Spillemyndigheden.
-              <br />
-              <span className="text-[#8B8E97]">Source: </span>
-              <button
-                onClick={(e) => {
-                  e.stopPropagation()
-                  e.preventDefault()
-                  window.open('https://www.spillemyndigheden.dk', '_blank', 'noopener,noreferrer')
-                }}
-                className="text-[#18FFFF] hover:underline cursor-pointer bg-transparent border-none p-0 text-[7px] inline font-inherit"
-              >
-                Spillemyndigheden
-              </button>
-            </div>
-          </div>
-        )}
+            {partner.operatorName && (
+              <div className="px-2 pt-1 pb-1 border-t border-[#3B3E47]/50">
+                <div className="text-[8px] text-[#8B8E97] leading-relaxed">
+                  <strong className="text-[#F5F6F7]">{partner.name}</strong> — Operated in Denmark by {partner.operatorName}. Licensed by Spillemyndigheden{partner.licenseCode ? ` (${partner.licenseCode})` : ''}.
+                  <br />
+                  <span className="text-[#8B8E97]">Source: </span>
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation()
+                      e.preventDefault()
+                      window.open('https://www.spillemyndigheden.dk', '_blank', 'noopener,noreferrer')
+                    }}
+                    className="text-[#18FFFF] hover:underline cursor-pointer bg-transparent border-none p-0 text-[8px] inline font-inherit"
+                  >
+                    Spillemyndigheden
+                  </button>
+                </div>
+              </div>
+            )}
 
         <div className="px-2 pb-2">
           <div className="bg-gradient-to-r from-[#FFD93D] to-[#FFA500] hover:from-[#FFA500] hover:to-[#FFD93D] text-[#0B0C10] font-bold py-1.5 px-3 rounded-xl text-center transition-all mb-1.5 shadow-lg shadow-[#FFD93D]/30 text-sm">
@@ -171,9 +171,9 @@ export default function BrandCard({ partner, gclid, isMobile, showPopularBadge }
       )}
 
       <div className="p-6 flex items-center gap-4">
-        <div className="relative w-60 h-60 flex-shrink-0">
-          <Image src={partner.logo || "/placeholder.svg"} alt={partner.name} fill className="object-contain" />
-        </div>
+            <div className="relative w-60 h-60 flex-shrink-0">
+              <Image src={partner.logo || "/placeholder.svg"} alt={partner.name} fill className="object-contain brightness-110 contrast-110" />
+            </div>
 
         <div className="flex-1 min-w-0">
           {partner.highlights && partner.highlights.length > 0 && (
@@ -258,25 +258,25 @@ export default function BrandCard({ partner, gclid, isMobile, showPopularBadge }
         />
       </div>
 
-      {partner.operatorName && (
-        <div className="px-6 py-4 border-t border-[#3B3E47] bg-[#0B0C10]">
-          <div className="text-xs text-[#8B8E97] leading-relaxed">
-            <strong className="text-[#F5F6F7]">{partner.name}</strong> — Operated in Denmark by {partner.operatorName}. Licensed by Spillemyndigheden.
-            <br />
-            <span className="text-[#8B8E97]">Source: </span>
-            <button
-              onClick={(e) => {
-                e.stopPropagation()
-                e.preventDefault()
-                window.open('https://www.spillemyndigheden.dk', '_blank', 'noopener,noreferrer')
-              }}
-              className="text-[#18FFFF] hover:underline cursor-pointer bg-transparent border-none p-0 text-xs"
-            >
-              Spillemyndigheden
-            </button>
-          </div>
-        </div>
-      )}
+          {partner.operatorName && (
+            <div className="px-6 py-4 border-t border-[#3B3E47] bg-[#0B0C10]">
+              <div className="text-xs text-[#8B8E97] leading-relaxed">
+                <strong className="text-[#F5F6F7]">{partner.name}</strong> — Operated in Denmark by {partner.operatorName}. Licensed by Spillemyndigheden{partner.licenseCode ? ` (${partner.licenseCode})` : ''}.
+                <br />
+                <span className="text-[#8B8E97]">Source: </span>
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    e.preventDefault()
+                    window.open('https://www.spillemyndigheden.dk', '_blank', 'noopener,noreferrer')
+                  }}
+                  className="text-[#18FFFF] hover:underline cursor-pointer bg-transparent border-none p-0 text-xs"
+                >
+                  Spillemyndigheden
+                </button>
+              </div>
+            </div>
+          )}
     </a>
   )
 }

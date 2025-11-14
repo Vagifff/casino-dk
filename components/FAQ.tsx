@@ -4,29 +4,29 @@ import { useState } from "react"
 
 const faqs = [
   {
-    question: "Are these casinos safe and licensed?",
+    question: "Is this casino safe and licensed?",
     answer:
-      "Yes, all casinos featured on our site are licensed by Spillemyndigheden and meet strict safety and fairness standards.",
+      "Yes, the casino featured on our site is licensed by Spillemyndigheden and meets strict safety and fairness standards.",
   },
   {
     question: "How do I claim a welcome bonus?",
     answer:
-      "Simply click the 'Get Bonus' button on any casino card, register an account, and make your first deposit. The bonus will be automatically credited to your account.",
+      "Simply click the 'Get Bonus' button on the casino card, register an account, and make your first deposit. The bonus will be automatically credited to your account.",
   },
   {
     question: "What is the minimum deposit?",
     answer:
-      "Most casinos on our list have a minimum deposit of 100 DKK. Check each casino's specific requirements before signing up.",
+      "The casino has a minimum deposit of 100 DKK. Check the casino's specific requirements before signing up.",
   },
   {
     question: "How long do withdrawals take?",
     answer:
-      "Withdrawal times vary by casino and payment method. Many of our recommended casinos offer same-day withdrawals for e-wallets, while bank transfers may take 3-5 business days.",
+      "Withdrawal times vary by payment method. The casino may offer same-day withdrawals for e-wallets, while bank transfers may take 3-5 business days. See the operator's site for details.",
   },
   {
     question: "Do I need to verify my account?",
     answer:
-      "Yes, Danish casinos are required by law to verify your identity before processing withdrawals. This typically involves providing ID and proof of address.",
+      "Yes, Danish casino operators are required by law to verify your identity before processing withdrawals. This typically involves providing ID and proof of address.",
   },
 ]
 

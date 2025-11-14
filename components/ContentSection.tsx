@@ -2,12 +2,12 @@ export default function ContentSection() {
   return (
     <section className="py-16 px-4 bg-[#16181F]">
       <div className="container mx-auto max-w-4xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-[#FFD93D]">Why Choose Our Recommended Casinos?</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-[#FFD93D]">Why Choose Our Recommended Casino?</h2>
 
         <div className="space-y-6 text-[#F5F6F7] leading-relaxed">
           <p>
             Finding the right online casino can be overwhelming with so many options available. That's why we've done
-            the hard work for you, carefully reviewing and testing each casino to ensure they meet our strict standards
+            the hard work for you, carefully reviewing and testing the casino to ensure it meets our strict standards
             for safety, fairness, and entertainment value.
           </p>
 
@@ -15,7 +15,7 @@ export default function ContentSection() {
             <div className="bg-[#0B0C10] p-6 rounded-lg border border-[#3B3E47]">
               <h3 className="text-xl font-bold mb-3 text-[#18FFFF]">🔒 Licensed & Secure</h3>
               <p className="text-sm">
-                All our recommended casinos are licensed by Spillemyndigheden, ensuring your safety and fair
+                Our recommended casino is licensed by Spillemyndigheden, ensuring your safety and fair
                 play.
               </p>
             </div>

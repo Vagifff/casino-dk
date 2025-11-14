@@ -12,17 +12,17 @@ export default function AboutPage() {
         <div className="space-y-6 text-[#F5F6F7] leading-relaxed">
           <p>
             Welcome to Denmark's most trusted casino comparison platform. We're dedicated to helping players find the
-            best online casinos with exclusive bonuses, fast withdrawals, and certified gaming experiences.
+            best online casino with exclusive bonuses, fast withdrawals, and certified gaming experiences.
           </p>
           <p>
-            Our team of experts reviews and tests every casino on our platform to ensure they meet the highest standards
+            Our team of experts reviews and tests the casino on our platform to ensure it meets the highest standards
             of safety, fairness, and entertainment value. We only recommend licensed and regulated operators that comply
             with Danish gambling laws.
           </p>
           <h2 className="text-2xl font-bold mt-8 mb-4 text-[#18FFFF]">Our Mission</h2>
           <p>
             To provide transparent, unbiased casino reviews and help Danish players make informed decisions about where to
-            play online. We believe in responsible gambling and player protection above all else.
+            play online. We believe in responsible gambling and player protection above all else. 18+. Play responsibly.
           </p>
           <h2 className="text-2xl font-bold mt-8 mb-4 text-[#18FFFF]">Why Trust Us?</h2>
           <ul className="list-disc list-inside space-y-2 ml-4">

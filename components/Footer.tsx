@@ -2,13 +2,13 @@ import Link from "next/link"
 
 export default function Footer() {
   return (
-    <footer className="bg-[#16181F] border-t border-[#3B3E47] py-12 px-4">
+    <footer className="bg-[#16181F] border-t border-[#3B3E47] py-12 px-4 pb-32 md:pb-40">
       <div className="container mx-auto max-w-6xl">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <h3 className="text-xl font-bold text-[#FFD93D] mb-4">bestcasinosdk.com</h3>
             <p className="text-sm text-[#F5F6F7] leading-relaxed">
-              Your trusted guide to the best DK online casinos with exclusive bonuses and expert reviews.
+              Your trusted guide to the best DK online casino with exclusive bonuses and expert reviews. 18+. Play responsibly.
             </p>
           </div>
 

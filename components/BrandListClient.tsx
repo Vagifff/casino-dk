@@ -8,30 +8,21 @@ interface BrandListClientProps {
   partners: Partner[];
   isMobile: boolean;
   gametype: Gametype;
-  gclid: string;
 }
 
 export default function BrandListClient({
   partners,
   isMobile,
   gametype,
-  gclid: initialGclid,
 }: BrandListClientProps) {
-  const [gclid, setGclid] = useState<string>(initialGclid);
+  const [gclid, setGclid] = useState<string>('');
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const urlParams = new URLSearchParams(window.location.search);
       const gclidFromUrl = urlParams.get('gclid');
-
       if (gclidFromUrl) {
-        sessionStorage.setItem('gclid', gclidFromUrl);
         setGclid(gclidFromUrl);
-      } else {
-        const gclidFromStorage = sessionStorage.getItem('gclid');
-        if (gclidFromStorage) {
-          setGclid(gclidFromStorage);
-        }
       }
     }
   }, []);

@@ -25,9 +25,9 @@ export default function ComplianceBanner() {
             ROFUS.dk
           </a>
         </div>
-        <div className="mt-0.5 md:mt-1.5 text-center text-[7px] md:text-xs text-[#8B8E97] leading-tight px-1">
+        <div className="mt-0.5 md:mt-1.5 text-center text-[9px] md:text-xs text-[#8B8E97] leading-tight px-1">
           <p className="whitespace-normal break-words">
-            <strong>Advertising disclosure:</strong> We feature affiliate links to licensed DK operators. If you sign up via our links, we may receive a commission at no extra cost to you.
+            <strong>Advertising disclosure:</strong> This website contains affiliate links to DK-licensed operators. We may receive a commission if you click a link and register/deposit. This does not influence our editorial content or rankings. Offers are subject to change—always read the operator's T&Cs before registering. 18+. Play responsibly. StopSpillet.dk | ROFUS.dk
           </p>
         </div>
       </div>

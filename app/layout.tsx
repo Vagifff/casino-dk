@@ -2,15 +2,15 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
-import { headers } from "next/headers"
+import CookieConsent from "@/components/CookieConsent"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const revalidate = 0
 
 export const metadata: Metadata = {
-  title: "Casino Bonus Expert DK | bestcasinosdk.com",
-  description: "Compare DK-licensed online casinos. Find welcome bonuses, withdrawal information, and certified gaming. 18+. Play responsibly.",
+  title: "DK Casino Site (2025) | bestcasinosdk.com",
+  description: "Find trusted DK-licensed casino. Detailed reviews, transparent terms, and safer gambling information. 18+. Play responsibly. StopSpillet.dk | ROFUS.dk",
   icons: {
     icon: "/icon.svg",
     apple: "/icon.png",
@@ -18,19 +18,16 @@ export const metadata: Metadata = {
   generator: 'v0.app'
 }
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  const headersList = await headers()
-  const userAgent = headersList.get("user-agent") || ""
-  const isMobileServer = /mobile|android|iphone|ipad|phone/i.test(userAgent)
-
   return (
-    <html lang="en">
-      <body className={inter.className} data-mobile={isMobileServer}>
+    <html lang="da">
+      <body className={inter.className}>
         {children}
+        <CookieConsent />
       </body>
     </html>
   )

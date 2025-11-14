@@ -1,11 +1,14 @@
+"use client"
+
 import type { Gametype } from "@/lib/mockDev"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 interface HeroProps {
   gametype: Gametype
-  isMobile: boolean
 }
 
-export default function Hero({ gametype, isMobile }: HeroProps) {
+export default function Hero({ gametype }: HeroProps) {
+  const isMobile = useIsMobile()
   const badges = [
     { icon: "🛡️", text: "Spillemyndigheden-licensed operators only" },
     { icon: "📋", text: "Transparent key terms on every offer" },

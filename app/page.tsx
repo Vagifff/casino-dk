@@ -6,30 +6,8 @@ import FAQ from "@/components/FAQ"
 import Footer from "@/components/Footer"
 import ComplianceBanner from "@/components/ComplianceBanner"
 import { getGametype, getPartners } from "@/lib/mockDev"
-import { headers } from "next/headers"
-import { getPersonalizedContent } from "@/lib/utils/content-personalization"
 
-export const dynamic = 'force-dynamic'
-
-interface HomeProps {
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }> | { [key: string]: string | string[] | undefined }
-}
-
-export default async function Home({ searchParams }: HomeProps) {
-  const headersList = await headers()
-  const userAgent = headersList.get("user-agent") || ""
-  const isMobileServer = /mobile|android|iphone|ipad|phone/i.test(userAgent)
-
-  const resolvedSearchParams = searchParams instanceof Promise ? await searchParams : searchParams
-  const gclid = typeof resolvedSearchParams.gclid === "string" ? resolvedSearchParams.gclid : ""
-
-  const headerMap: Record<string, string | null> = {}
-  headersList.forEach((value, key) => {
-    headerMap[key] = value
-  })
-
-  const personalization = getPersonalizedContent(headerMap, gclid)
-
+export default function Home() {
   const gametype = getGametype()
   const partners = getPartners()
 
@@ -38,13 +16,10 @@ export default async function Home({ searchParams }: HomeProps) {
       <ComplianceBanner />
       <Header />
       <main>
-        <Hero gametype={gametype} isMobile={isMobileServer} />
+        <Hero gametype={gametype} />
         <BrandList 
           partners={partners} 
-          isMobile={isMobileServer} 
           gametype={gametype} 
-          gclid={gclid}
-          enableExtendedView={personalization.showExtended}
         />
         <ContentSection />
         <FAQ />
