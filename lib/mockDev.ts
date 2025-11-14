@@ -50,7 +50,7 @@ export function getPartners(): Partner[] {
     {
       id: 1,
       name: "Expekt",
-      logo: "/expekt-logo.svg",
+      logo: "/expekt.webp",
       paymentMethods: [
         { id: "visa", name: "Visa", logo: "/visa-logo-generic.png" },
         { id: "mastercard", name: "Mastercard", logo: "/mastercard-logo.png" },
