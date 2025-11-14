@@ -39,10 +39,10 @@ export function getGametype(): Gametype {
   return {
     id: 1,
     order: 1,
-    headText: "DK Casino Sites (2025) – Licensed, Safe & DK-Focused",
+    headText: "DK Casino Sites – Licensed, Safe & DK-Focused",
     headParagraph:
       "Compare trusted DK-licensed casinos. Find detailed reviews, transparent terms, and safer gambling information. 18+. StopSpillet.dk",
-    pageTitle: "DK Casino Sites (2025) | bestcasinosdk.com",
+    pageTitle: "DK Casino Sites | bestcasinosdk.com",
   }
 }
 export function getPartners(): Partner[] {
