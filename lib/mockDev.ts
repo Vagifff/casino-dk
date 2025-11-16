@@ -42,7 +42,7 @@ export function getGametype(): Gametype {
     headText: "DK Casino Site (2025) – Licensed, Safe & DK-Focused",
     headParagraph:
       "Find trusted DK-licensed casino. Detailed reviews, transparent terms, and safer gambling information. 18+. StopSpillet.dk",
-    pageTitle: "DK Casino Site (2025) | casino-dk.vercel.app",
+    pageTitle: "DK Casino Site (2025) | dkcasino.net",
   }
 }
 export function getPartners(): Partner[] {

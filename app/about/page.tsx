@@ -84,7 +84,7 @@ export default function AboutPage() {
 
           <h2 className="text-2xl font-bold mt-8 mb-4 text-[#18FFFF]">Contact Information</h2>
           <p>
-            For questions, feedback, or concerns, please contact us at: <strong className="text-[#18FFFF]">support@casino-dk.vercel.app</strong>
+            For questions, feedback, or concerns, please contact us at: <strong className="text-[#18FFFF]">support@dkcasino.net</strong>
           </p>
           <p className="text-sm text-[#8B8E97] mt-4">
             <strong>Note:</strong> We are an independent media/affiliate publisher. We do not provide gambling services, handle customer accounts, or process withdrawals. For account or withdrawal issues, please contact the relevant operator's customer support directly.

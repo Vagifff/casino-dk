@@ -17,7 +17,7 @@ export default function ContactPage() {
             <div className="space-y-4">
               <div>
                 <h3 className="font-semibold text-[#FFD93D] mb-2">Email</h3>
-                <p>support@casino-dk.vercel.app</p>
+                <p>support@dkcasino.net</p>
               </div>
               <div className="pt-4 border-t border-[#3B3E47]">
                 <h3 className="font-semibold text-[#FFD93D] mb-2">Publisher type</h3>

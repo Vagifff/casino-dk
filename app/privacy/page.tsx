@@ -15,7 +15,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-2xl font-bold mt-8 mb-4 text-[#18FFFF]">Who we are</h2>
             <p>
-              casino-dk.vercel.app ("we", "us") is a comparison publisher. Contact: support@casino-dk.vercel.app
+              dkcasino.net ("we", "us") is a comparison publisher. Contact: support@dkcasino.net
             </p>
           </section>
 
@@ -62,7 +62,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-2xl font-bold mt-8 mb-4 text-[#18FFFF]">Your rights</h2>
             <p>
-              Access, rectification, erasure, restriction, portability, objection, and withdrawal of consent at any time (where processing is based on consent). To exercise rights, email support@casino-dk.vercel.app. You can lodge a complaint with the Danish Data Protection Agency (Datatilsynet).
+              Access, rectification, erasure, restriction, portability, objection, and withdrawal of consent at any time (where processing is based on consent). To exercise rights, email support@dkcasino.net. You can lodge a complaint with the Danish Data Protection Agency (Datatilsynet).
             </p>
           </section>
 

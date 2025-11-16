@@ -9,9 +9,9 @@ const inter = Inter({ subsets: ["latin"] })
 export const revalidate = 0
 
 export const metadata: Metadata = {
-  title: "DK Casino Site (2025) | casino-dk.vercel.app",
+  title: "DK Casino Site (2025) | dkcasino.net",
   description: "Find trusted DK-licensed casino. Detailed reviews, transparent terms, and safer gambling information. 18+. Play responsibly. StopSpillet.dk | ROFUS.dk",
-  metadataBase: new URL('https://casino-dk.vercel.app'),
+  metadataBase: new URL('https://dkcasino.net'),
   alternates: {
     canonical: '/',
   },

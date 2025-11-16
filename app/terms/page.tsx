@@ -15,7 +15,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-2xl font-bold mt-8 mb-4 text-[#18FFFF]">About us</h2>
             <p>
-              casino-dk.vercel.app is an independent comparison publisher. We do not provide gambling services or handle customer accounts or withdrawals.
+              dkcasino.net is an independent comparison publisher. We do not provide gambling services or handle customer accounts or withdrawals.
             </p>
           </section>
 
@@ -75,7 +75,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-2xl font-bold mt-8 mb-4 text-[#18FFFF]">Contact</h2>
             <p>
-              support@casino-dk.vercel.app
+              support@dkcasino.net
             </p>
           </section>
         </div>

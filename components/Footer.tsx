@@ -21,7 +21,7 @@ export default function Footer() {
       <div className="container mx-auto max-w-6xl">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-xl font-bold text-[#FFD93D] mb-4">casino-dk.vercel.app</h3>
+            <h3 className="text-xl font-bold text-[#FFD93D] mb-4">dkcasino.net</h3>
             <p className="text-sm text-[#F5F6F7] leading-relaxed">
               Your trusted guide to the best DK online casino with exclusive bonuses and expert reviews. 18+. Play responsibly.
             </p>
@@ -98,13 +98,13 @@ export default function Footer() {
               <p className="text-sm text-[#8B8E97]">Gambling can be addictive. Play responsibly.</p>
             </div>
 
-            <p className="text-sm text-[#8B8E97]">© 2025 casino-dk.vercel.app. All rights reserved.</p>
+            <p className="text-sm text-[#8B8E97]">© 2025 dkcasino.net. All rights reserved.</p>
           </div>
 
           <div className="mt-6 text-xs text-[#8B8E97] leading-relaxed">
             <p className="font-semibold text-[#F5F6F7] mb-2">Advertising Disclosure</p>
             <p>
-              casino-dk.vercel.app is an independent comparison publisher. We do not operate an online casino. We partner with DK-licensed operators and may receive a commission if you click a link and create an account/deposit. This never affects the ranking or the information we publish. Offers are subject to change—always read the operator's T&Cs and significant terms before registering. 18+. StopSpillet.dk. ROFUS.dk.
+              dkcasino.net is an independent comparison publisher. We do not operate an online casino. We partner with DK-licensed operators and may receive a commission if you click a link and create an account/deposit. This never affects the ranking or the information we publish. Offers are subject to change—always read the operator's T&Cs and significant terms before registering. 18+. StopSpillet.dk. ROFUS.dk.
             </p>
           </div>
         </div>
