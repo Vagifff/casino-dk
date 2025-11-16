@@ -1,8 +1,8 @@
 'use client';
 
-import { useEffect, useState } from 'react';
 import type { Partner, Gametype } from '@/lib/mockDev';
 import BrandCard from './BrandCard';
+import { useGclid } from '@/hooks/use-gclid';
 
 interface BrandListClientProps {
   partners: Partner[];
@@ -15,17 +15,7 @@ export default function BrandListClient({
   isMobile,
   gametype,
 }: BrandListClientProps) {
-  const [gclid, setGclid] = useState<string>('');
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const urlParams = new URLSearchParams(window.location.search);
-      const gclidFromUrl = urlParams.get('gclid');
-      if (gclidFromUrl) {
-        setGclid(gclidFromUrl);
-      }
-    }
-  }, []);
+  const gclid = useGclid();
 
   return (
     <section className='pt-1 pb-8 md:pt-6 md:pb-16 px-4 bg-[#0B0C10]'>

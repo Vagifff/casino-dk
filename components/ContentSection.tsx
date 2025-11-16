@@ -42,6 +42,56 @@ export default function ContentSection() {
             </div>
           </div>
 
+          <h3 className="text-2xl font-bold mt-12 mb-4 text-[#18FFFF]">Understanding Danish Casino Regulations</h3>
+          <p>
+            All casinos featured on our platform are licensed and regulated by Spillemyndigheden, Denmark's gambling authority. This ensures:
+          </p>
+          <ul className="list-disc list-inside space-y-2 ml-4 mt-4">
+            <li>Fair play and game integrity through RNG certification</li>
+            <li>Player fund protection and segregation</li>
+            <li>Responsible gambling tools and resources</li>
+            <li>Compliance with Danish data protection laws (GDPR)</li>
+            <li>Regular audits and regulatory oversight</li>
+          </ul>
+
+          <h3 className="text-2xl font-bold mt-12 mb-4 text-[#18FFFF]">Payment Methods Available in Denmark</h3>
+          <p>
+            Danish players have access to various payment methods when playing at licensed casinos:
+          </p>
+          <div className="grid md:grid-cols-2 gap-4 my-6">
+            <div className="bg-[#0B0C10] p-4 rounded-lg border border-[#3B3E47]">
+              <h4 className="font-semibold text-[#18FFFF] mb-2">Bank Transfers</h4>
+              <p className="text-sm">Direct bank transfers (Dankort, MobilePay) - typically 1-3 business days</p>
+            </div>
+            <div className="bg-[#0B0C10] p-4 rounded-lg border border-[#3B3E47]">
+              <h4 className="font-semibold text-[#18FFFF] mb-2">E-Wallets</h4>
+              <p className="text-sm">PayPal, Skrill, Neteller - usually instant deposits and fast withdrawals</p>
+            </div>
+            <div className="bg-[#0B0C10] p-4 rounded-lg border border-[#3B3E47]">
+              <h4 className="font-semibold text-[#18FFFF] mb-2">Credit/Debit Cards</h4>
+              <p className="text-sm">Visa, Mastercard - widely accepted, processing times vary</p>
+            </div>
+            <div className="bg-[#0B0C10] p-4 rounded-lg border border-[#3B3E47]">
+              <h4 className="font-semibold text-[#18FFFF] mb-2">Cryptocurrency</h4>
+              <p className="text-sm">Some operators accept Bitcoin and other cryptocurrencies</p>
+            </div>
+          </div>
+
+          <h3 className="text-2xl font-bold mt-12 mb-4 text-[#18FFFF]">Understanding Casino Bonuses</h3>
+          <p>
+            Welcome bonuses and promotions can enhance your gaming experience, but it's important to understand the terms:
+          </p>
+          <ul className="list-disc list-inside space-y-2 ml-4 mt-4">
+            <li><strong>Wagering Requirements:</strong> Typically 35x the bonus amount - you must bet the bonus a certain number of times before withdrawal</li>
+            <li><strong>Maximum Bet Limits:</strong> Usually 50 DKK per spin/round when playing with bonus funds</li>
+            <li><strong>Game Restrictions:</strong> Some games may contribute less (or not at all) to wagering requirements</li>
+            <li><strong>Time Limits:</strong> Bonuses often expire after 30 days if wagering isn't completed</li>
+            <li><strong>Payment Method Exclusions:</strong> Some payment methods may be excluded from bonus eligibility</li>
+          </ul>
+          <p className="mt-4">
+            Always read the full terms and conditions on the operator's website before claiming any bonus.
+          </p>
+
           <h3 className="text-2xl font-bold mt-12 mb-4 text-[#18FFFF]">Play Safe (18+)</h3>
           <p>
             Gambling is entertainment, not a way to make money. If you're worried about your play, visit{" "}

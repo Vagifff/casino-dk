@@ -2,9 +2,22 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import { useGclid } from "@/hooks/use-gclid"
 
 export default function CookieConsent() {
   const [showBanner, setShowBanner] = useState(false)
+  const gclid = useGclid()
+
+  const getLinkWithGclid = (href: string) => {
+    if (!gclid || typeof window === 'undefined') return href
+    try {
+      const url = new URL(href, window.location.origin)
+      url.searchParams.set('gclid', gclid)
+      return url.pathname + url.search
+    } catch {
+      return href + (href.includes('?') ? '&' : '?') + `gclid=${gclid}`
+    }
+  }
 
   useEffect(() => {
     const consent = localStorage.getItem("cookie-consent")
@@ -33,7 +46,7 @@ export default function CookieConsent() {
             <p className="text-xs md:text-sm text-[#F5F6F7] leading-relaxed">
               We use cookies and similar technologies to improve your experience, analyze site traffic, and for affiliate tracking. 
               By clicking "Accept", you consent to our use of cookies. You can manage preferences in your browser settings.{" "}
-              <Link href="/privacy" className="text-[#18FFFF] hover:underline">
+              <Link href={getLinkWithGclid("/privacy")} className="text-[#18FFFF] hover:underline">
                 Learn more
               </Link>
             </p>

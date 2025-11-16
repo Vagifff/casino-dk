@@ -9,10 +9,17 @@ const inter = Inter({ subsets: ["latin"] })
 export const revalidate = 0
 
 export const metadata: Metadata = {
-  title: "DK Casino Site (2025) | bestcasinosdk.com",
+  title: "DK Casino Site (2025) | casino-dk.vercel.app",
   description: "Find trusted DK-licensed casino. Detailed reviews, transparent terms, and safer gambling information. 18+. Play responsibly. StopSpillet.dk | ROFUS.dk",
+  metadataBase: new URL('https://casino-dk.vercel.app'),
+  alternates: {
+    canonical: '/',
+  },
   icons: {
-    icon: "/icon.svg",
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/icon.png", type: "image/png" },
+    ],
     apple: "/icon.png",
   },
   generator: 'v0.app'

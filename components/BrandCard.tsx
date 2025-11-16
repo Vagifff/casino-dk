@@ -61,13 +61,13 @@ export default function BrandCard({ partner, gclid, isMobile, showPopularBadge }
     )
   }
 
-  if (isMobile) {
-    return (
+  return (
+    <>
       <a
         href={partnerUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="block bg-gradient-to-br from-[#1a1d26] to-[#16181F] border-2 border-[#FFD93D]/30 rounded-xl overflow-hidden hover:border-[#FFD93D] hover:shadow-[0_0_25px_rgba(255,217,61,0.4)] transition-all transform hover:scale-[1.02]"
+        className="block md:hidden bg-gradient-to-br from-[#1a1d26] to-[#16181F] border-2 border-[#FFD93D]/30 rounded-xl overflow-hidden hover:border-[#FFD93D] hover:shadow-[0_0_25px_rgba(255,217,61,0.4)] transition-all transform hover:scale-[1.02]"
       >
         {showPopularBadge && (
           <div className="bg-gradient-to-r from-[#FFD93D] to-[#FFA500] text-[#0B0C10] text-[10px] font-bold px-3 py-1 inline-block rounded-b-lg shadow-lg">⭐ MOST POPULAR</div>
@@ -77,7 +77,14 @@ export default function BrandCard({ partner, gclid, isMobile, showPopularBadge }
           <div className="flex items-center justify-center gap-6 mb-2">
                 <div className="flex-shrink-0">
                   <div className="relative w-44 h-28">
-                    <Image src={partner.logo || "/placeholder.svg"} alt={partner.name} fill className="object-contain brightness-110 contrast-110" />
+                    <Image 
+                      src={partner.logo || "/placeholder.svg"} 
+                      alt="" 
+                      fill 
+                      className="object-contain" 
+                      sizes="176px"
+                      style={{ objectFit: 'contain' }}
+                    />
                   </div>
                 </div>
 
@@ -99,7 +106,7 @@ export default function BrandCard({ partner, gclid, isMobile, showPopularBadge }
             {partner.operatorName && (
               <div className="px-2 pt-1 pb-1 border-t border-[#3B3E47]/50">
                 <div className="text-[8px] text-[#8B8E97] leading-relaxed">
-                  <strong className="text-[#F5F6F7]">{partner.name}</strong> — Operated in Denmark by {partner.operatorName}. Licensed by Spillemyndigheden{partner.licenseCode ? ` (${partner.licenseCode})` : ''}.
+                  Operated in Denmark by {partner.operatorName}. Licensed by Spillemyndigheden{partner.licenseCode ? ` (${partner.licenseCode})` : ''}.
                   <br />
                   <span className="text-[#8B8E97]">Source: </span>
                   <button
@@ -156,23 +163,27 @@ export default function BrandCard({ partner, gclid, isMobile, showPopularBadge }
           </div>
         </div>
       </a>
-    )
-  }
 
-  return (
-    <a
-      href={partnerUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="block bg-gradient-to-br from-[#1a1d26] to-[#16181F] border-2 border-[#FFD93D]/30 rounded-xl overflow-hidden hover:border-[#FFD93D] hover:shadow-[0_0_30px_rgba(255,217,61,0.5)] transition-all transform hover:scale-[1.01]"
-    >
+      <a
+        href={partnerUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hidden md:block bg-gradient-to-br from-[#1a1d26] to-[#16181F] border-2 border-[#FFD93D]/30 rounded-xl overflow-hidden hover:border-[#FFD93D] hover:shadow-[0_0_30px_rgba(255,217,61,0.5)] transition-all transform hover:scale-[1.01]"
+      >
       {showPopularBadge && (
         <div className="bg-gradient-to-r from-[#FFD93D] to-[#FFA500] text-[#0B0C10] text-xs font-bold px-5 py-1.5 inline-block rounded-b-lg shadow-lg">⭐ MOST POPULAR</div>
       )}
 
       <div className="p-6 flex items-center gap-4">
             <div className="relative w-60 h-60 flex-shrink-0">
-              <Image src={partner.logo || "/placeholder.svg"} alt={partner.name} fill className="object-contain brightness-110 contrast-110" />
+              <Image 
+                src={partner.logo || "/placeholder.svg"} 
+                alt="" 
+                fill 
+                className="object-contain" 
+                sizes="240px"
+                style={{ objectFit: 'contain' }}
+              />
             </div>
 
         <div className="flex-1 min-w-0">
@@ -261,7 +272,7 @@ export default function BrandCard({ partner, gclid, isMobile, showPopularBadge }
           {partner.operatorName && (
             <div className="px-6 py-4 border-t border-[#3B3E47] bg-[#0B0C10]">
               <div className="text-xs text-[#8B8E97] leading-relaxed">
-                <strong className="text-[#F5F6F7]">{partner.name}</strong> — Operated in Denmark by {partner.operatorName}. Licensed by Spillemyndigheden{partner.licenseCode ? ` (${partner.licenseCode})` : ''}.
+                Operated in Denmark by {partner.operatorName}. Licensed by Spillemyndigheden{partner.licenseCode ? ` (${partner.licenseCode})` : ''}.
                 <br />
                 <span className="text-[#8B8E97]">Source: </span>
                 <button
@@ -277,6 +288,7 @@ export default function BrandCard({ partner, gclid, isMobile, showPopularBadge }
               </div>
             </div>
           )}
-    </a>
+      </a>
+    </>
   )
 }
